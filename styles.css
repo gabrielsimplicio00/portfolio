@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    color: white;
+}
+
+/* body {
+    
+} */
+
+#welcome-section h1 {
+    font-size: 4em;
+    font-weight: 900;
+    width: 55%;
+    text-align: center;
+    text-shadow: 2px 2px #636363;
+}
+
+p {
+    display: flow-root;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    background-color: rgb(173, 50, 50);
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid rgb(58, 58, 58);
+}
+
+#navbar a {
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1em 2.5em;
+    font-size: 1.2rem;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgb(31, 31, 31), rgb(59, 59, 59));
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#projects {
+    background-image: linear-gradient(180deg, #63708f, #2d374d);
+    height: 100vh;
+}
+
+#projects h2 {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 2px 2px #636363;
+}
+
+.projects-div a {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#contact {
+    background-image: linear-gradient(180deg, #464749, #2b2c2c);
+    height: auto;
+}
+
+#contact h2 {
+    font-size: 3.7em;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px #636363;
+}
+
+#contact a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.contact-div {
+    text-align: center;
+}
+
+.footer {
+    height: 10px;
+    border-top: 5px solid rgb(172, 42, 42);
+    padding: 2rem;
+    background-image: linear-gradient(180deg, #2b2c2c, #464749);
+}
+
+@media (max-height: 450px)
+{
+    #welcome-section, #projects, #contact {
+        height: 100vh;
+    }
+}

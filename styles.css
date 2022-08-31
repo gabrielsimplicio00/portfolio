@@ -14,7 +14,7 @@
 }
 
 #welcome-section h1 {
-    font-size: 4.2em;
+    font-size: 4.2rem;
     text-align: center;
     text-shadow: 4px 4px #2c2c2c;
 }
@@ -49,13 +49,17 @@ a {
     text-decoration: none;
     color: white;
     line-height: 70px;
-    padding: 0 1em 0 3em;
+    padding: 0 2em 0 3em;
     font-size: 1.2rem;
     text-shadow: 2px 2px #2c2c2c;
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 #navbar a:hover {
     color: rgb(212, 212, 212);
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 #welcome-section {
@@ -74,7 +78,7 @@ a {
     flex-direction: column;
     background-image: linear-gradient(180deg, #4b556d, #2d374d);
     width: 100%;
-    height: auto;
+    height: max-content;
 }
 
 #projects h2 {
@@ -94,12 +98,13 @@ a {
 }
 
 .projects-div {
-    padding: 20px;
-    display: grid;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: column;
     grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    gap: 5px;
 }
 
 .projects-div p {
@@ -107,17 +112,54 @@ a {
     background-color: #44495a;
     padding: 10px;
     max-width: 100%;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.projects-div p:hover {
+    color: rgb(206, 206, 206);
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 .projects-div a {
-    display: grid;
+    display: block;
     text-shadow: 3px 3px #2c2c2c;
+    flex-basis: 30%;
+    flex-grow: 0;
     width: 90%;
     max-width: 1280px;
     margin: auto;
     margin-bottom: 5rem;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+}
+
+.show {
+    margin: auto;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    background-color: #44495a;
+    border: 1px solid #27292f;
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background-color: #353841;
+    color: rgb(255, 255, 255);
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 #contact {
